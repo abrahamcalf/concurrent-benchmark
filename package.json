@@ -1,0 +1,29 @@
+{
+  "name": "concurrent-benchmark",
+  "version": "0.0.0-nightly.20220324",
+  "description": "Benchmark scripts concurrently.",
+  "author": "Abraham Hernandez",
+  "email": "abraham@abranhe.com",
+  "repository": "abranhe/concurrent-benchmark",
+  "scripts": {
+    "build": "go build -o bin/concurrent-benchmark"
+  },
+  "bin": {
+    "concurrent-benchmark": "./bin/concurrent-benchmark",
+    "cb": "./bin/concurrent-benchmark"
+  },
+  "license": "MIT",
+  "files": [
+    "bin/"
+  ],
+  "keywords": [
+    "benchmark",
+    "concurrent",
+    "concurrency",
+    "concurrent-benchmark",
+    "go",
+    "golang",
+    "threads",
+    "benchmarking"
+  ]
+}
