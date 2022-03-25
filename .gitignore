@@ -1,1 +1,3 @@
-concurrent-benchmark
+/node_modules/
+*.lock
+*.log
