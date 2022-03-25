@@ -12,7 +12,7 @@ time=$(
 )
 
 # time taken `0m2.330s`
-time_taken=$(echo $time | awk '{print $2}')
+time_taken=$(echo $time | grep real | awk '{print $2}')
 
 # extract seconds
 time_taken_seconds=$(echo $time_taken | cut -d '.' -f 1 | cut -d 'm' -f 2)
