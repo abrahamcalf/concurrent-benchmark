@@ -74,11 +74,9 @@ cb.run([
 [lint]: https://github.com/abranhe/concurrent-benchmark/actions/workflows/lint.yml
 [codeql]: https://github.com/abranhe/concurrent-benchmark/actions/workflows/codeql.yml
 [report-card]: https://goreportcard.com/report/github.com/abranhe/concurrent-benchmark
-
-
 [npm-badge]: https://img.shields.io/npm/v/concurrent-benchmark
 [license-badge]: https://img.shields.io/npm/l/concurrent-benchmark
-[test-badge]: https://github.com/abranhe/concurrent-benchmark/workflows/test.yml/badge.svg
+[test-badge]: https://github.com/abranhe/concurrent-benchmark/actions/workflows/test.yml/badge.svg
 [lint-badge]: https://github.com/abranhe/concurrent-benchmark/actions/workflows/lint.yml/badge.svg
 [codeql-badge]: https://github.com/abranhe/concurrent-benchmark/actions/workflows/codeql.yml/badge.svg
 [report-card-badge]: https://goreportcard.com/badge/github.com/abranhe/concurrent-benchmark
