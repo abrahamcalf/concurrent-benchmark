@@ -13,9 +13,11 @@ time=$(
 
 # time taken `0m2.330s`
 time_taken=$(echo $time | grep real | awk '{print $2}')
+echo "time taken: $time_taken"
 
 # extract seconds
 time_taken_seconds=$(echo $time_taken | cut -d '.' -f 1 | cut -d 'm' -f 2)
+echo "time taken seconds: $time_taken_seconds"
 
 if [ $time_taken_seconds -eq 2 ]; then
   echo "PASS"
