@@ -10,6 +10,7 @@ time=$(
       'node fixtures/timeout.js'
   ) 2>&1 >/dev/null
 )
+echo "time: $time"
 
 # time taken `0m2.330s`
 time_taken=$(echo $time | grep real | awk '{print $2}')
