@@ -6,7 +6,10 @@
   "email": "abraham@abranhe.com",
   "repository": "abranhe/concurrent-benchmark",
   "scripts": {
-    "build": "go build -o bin/concurrent-benchmark"
+    "build:linux": "GOOS=linux GOARCH=amd64 go build -o bin/cb-amd64-linux main.go",
+    "build:windows": "GOOS=windows GOARCH=amd64 go build -o bin/cb-amd64.exe main.go",
+    "build:macos": "GOOS=darwin GOARCH=amd64 go build -o bin/cb-amd64-darwin main.go",
+    "build:all": "yarn build:linux && yarn build:windows && yarn build:macos"
   },
   "bin": {
     "concurrent-benchmark": "./bin/concurrent-benchmark",
@@ -14,7 +17,7 @@
   },
   "license": "MIT",
   "files": [
-    "bin/concurrent-benchmark"
+    "bin/"
   ],
   "keywords": [
     "benchmark",

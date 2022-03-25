@@ -1,9 +1,18 @@
 #!/bin/bash
 
+if [ "$(uname)" == "Darwin" ]; then
+  bin_file="cb-amd64-darwin"
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+  bin_file="cb-amd64-linux"
+else
+  echo "Cannot detect OS"
+  exit 1
+fi
+
 # https://superuser.com/a/1310112/859165
 time=$(
   (
-    time ./bin/concurrent-benchmark \
+    time ./bin/$bin_file \
       'node fixtures/timeout.js' \
       'node fixtures/timeout.js' \
       'node fixtures/timeout.js' \
